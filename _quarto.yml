@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "nekoder"
+  title: "吾輩は猫でR"
   navbar:
     left:
       - href: index.qmd

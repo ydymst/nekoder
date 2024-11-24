@@ -11,6 +11,6 @@
     "href": "index.html",
     "title": "nekoder",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "はじめに\n\nバイオインフォマティクスで使いそうなRパッケージの使い方をまとめました\nバイオインフォマティクスもR言語も専門ではないです\n個人的なメモなので、誤りも多分に含まれているかもしれません\n御馳走とまではいかなくとも、前菜くらいのつもりです\nどうぞよしなに"
   }
 ]

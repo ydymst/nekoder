@@ -2,10 +2,9 @@
 title: "nekoder"
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
-```
+# はじめに
+- バイオインフォマティクスで使いそうなRパッケージの使い方をまとめました
+- バイオインフォマティクスもR言語も専門ではないです
+- 個人的なメモなので、誤りも多分に含まれているかもしれません
+- 御馳走とまではいかなくとも、前菜くらいのつもりです
+- どうぞよしなに
