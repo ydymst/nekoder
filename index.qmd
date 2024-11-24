@@ -8,4 +8,4 @@ title: "はじめに"
 - 御馳走とまではいかなくとも、前菜くらいのつもりです
 - どうぞよしなに
 
-![](/Users/YukiYamashita/Downloads/IMG_4123.jpg){width=100% fig-align="center"}
+![](./IMG_4123.jpg)
