@@ -7,3 +7,5 @@ title: "はじめに"
 - 個人的なメモなので、誤りも多分に含まれているかもしれません
 - 御馳走とまではいかなくとも、前菜くらいのつもりです
 - どうぞよしなに
+
+![](/Users/YukiYamashita/Downloads/IMG_4123.jpg){width=100% fig-align="center"}
