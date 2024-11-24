@@ -1,7 +1,7 @@
 ---
 title: "ggtree"
 ---
-::: {.callout-note icon="false"}
+::: {.callout-note title="ggtreeとは" icon="false"}
 - 系統樹の可視化やアノテーションのために作られたRパッケージ
 - Newick形式（ニューウィック）で示された系統関係をもとに系統樹を作成する
 - 系統樹のデザインを色々いじれる
