@@ -1,16 +1,16 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "nekoder",
+    "title": "はじめに",
     "section": "",
-    "text": "はじめに\n\nバイオインフォマティクスで使いそうなRパッケージの使い方をまとめました\nバイオインフォマティクスもR言語も専門ではないです\n個人的なメモなので、誤りも多分に含まれているかもしれません\n御馳走とまではいかなくとも、前菜くらいのつもりです\nどうぞよしなに"
+    "text": "バイオインフォマティクスで使いそうなRパッケージの使い方をまとめました\nバイオインフォマティクスもR言語も専門ではないです\n個人的なメモなので、誤りも多分に含まれているかもしれません\n御馳走とまではいかなくとも、前菜くらいのつもりです\nどうぞよしなに"
+  },
+  {
+    "objectID": "ggtree.html",
+    "href": "ggtree.html",
+    "title": "ggtree",
+    "section": "",
+    "text": "ggtreeとは\n\n系統樹の可視化やアノテーションのために作られたRパッケージ\nNewick形式（ニューウィック）で示された系統関係をもとに系統樹を作成する\n系統樹のデザインを色々いじれる"
   }
 ]
