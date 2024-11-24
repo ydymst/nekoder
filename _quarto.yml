@@ -6,8 +6,6 @@ website:
   title: "吾輩は猫でR"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
       - href: ggtree.qmd
         text: ggtree
 
