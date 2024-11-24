@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>はじめに – 吾輩は猫でR</title>
+<title>Quartoで作ったウェブサイトをGitHub Pagesで公開する – 吾輩は猫でR</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -93,7 +93,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">ggtree</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./quarto.html"> 
+    <a class="nav-link active" href="./quarto.html" aria-current="page"> 
 <span class="menu-text">Quarto</span></a>
   </li>  
 </ul>
@@ -107,15 +107,22 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#はじめに" id="toc-はじめに" class="nav-link active" data-scroll-target="#はじめに">はじめに</a></li>
+  <li><a href="#ポイント" id="toc-ポイント" class="nav-link" data-scroll-target="#ポイント">ポイント</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">はじめに</h1>
+<h1 class="title">Quartoで作ったウェブサイトをGitHub Pagesで公開する</h1>
 </div>
 
 
@@ -132,16 +139,25 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="はじめに" class="level1">
+<h1>はじめに</h1>
+<p><a href="&quot;https://quarto.org/&quot;">Quarto</a>を使って、RStudio上で作り、GitHub Pages上で公開することにした。</p>
+</section>
+<section id="ポイント" class="level1">
+<h1>ポイント</h1>
 <ul>
-<li>猫です</li>
-<li>バイオインフォマティクスで使いそうなRパッケージの使い方をまとめました</li>
-<li>バイオインフォマティクスもR言語も専門ではないです</li>
-<li>個人的なメモなので、誤りも多分に含まれているかもしれません</li>
-<li>御馳走とまではいかなくとも、前菜くらいのつもりです</li>
-<li>どうぞよしなに</li>
+<li>GitHubが参照できる場所に<code>XXXXX.html</code>（Render（.qmd -&gt; .html）の出力結果）を置かないといけない</li>
+<li>ローカル環境で作成したものを反映させる時は、</li>
 </ul>
+<ol type="1">
+<li><code>quarto render</code></li>
+<li><code>github add .</code> 現在のディレクトリの内容をステージング</li>
+<li><code>github commit -m "何かコメントを書く"</code></li>
+<li><code>github push origin gh-pages</code> リモート環境（GitHubのgh-pagesブランチ）にローカル環境の内容（Origin）を送信 を行う。RStudio上でTerminalを動かすこともできるので、そこで行うのが楽。GitコマンドはLinuxコマンドのように演算子で繋ぐこともできるので、<code>quarto render; github add .; github commit -m "何かコメントを書く"; github push origin gh-pages</code>の1行でも可。</li>
+</ol>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

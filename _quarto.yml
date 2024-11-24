@@ -8,6 +8,8 @@ website:
     left:
       - href: ggtree.qmd
         text: ggtree
+      - href: quarto.qmd
+        text: Quarto
 
 format:
   html:

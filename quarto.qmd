@@ -1,0 +1,14 @@
+---
+title: "Quartoで作ったウェブサイトをGitHub Pagesで公開する"
+---
+# はじめに
+[Quarto]("https://quarto.org/")を使って、RStudio上で作り、GitHub Pages上で公開することにした。
+
+# ポイント
+- GitHubが参照できる場所に`XXXXX.html`（Render（.qmd -> .html）の出力結果）を置かないといけない
+- ローカル環境で作成したものを反映させる時は、
+1. `quarto render`
+2. `github add .` 現在のディレクトリの内容をステージング
+3. `github commit -m "何かコメントを書く"` 
+4. `github push origin gh-pages` リモート環境（GitHubのgh-pagesブランチ）にローカル環境の内容（Origin）を送信
+を行う。RStudio上でTerminalを動かすこともできるので、そこで行うのが楽。GitコマンドはLinuxコマンドのように演算子で繋ぐこともできるので、`quarto render; github add .; github commit -m "何かコメントを書く"; github push origin gh-pages`の1行でも可。
