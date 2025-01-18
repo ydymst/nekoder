@@ -45,7 +45,7 @@ ggtreeを使って系統樹を作図するためには、十二支の動物た�
 
 [**TimeTree5**](http://www.timetree.org/)は、生命の進化のタイムスケールに関する情報を集めたデータベースで、膨大な数の研究がまとめられている。
 
-![](./TimeTree5-toppage.png){width=100% fig-align="center"}
+![](./TimeTree5-toppage.png)
 
 今回は十二支の系統関係が知りたいので、**Build a Timetree**に十二支の動物たちの種名のリストをアップロードする。このリストは種ごとに改行した標準テキストでよい。
 
