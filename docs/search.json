@@ -4,7 +4,7 @@
     "href": "quarto.html",
     "title": "Quartoで作ったウェブサイトをGitHub Pagesで公開する",
     "section": "",
-    "text": "はじめに\nQuartoを使って、RStudio上で作り、GitHub Pages上で公開することにした。\n\n\nポイント\n\nGitHubが参照できる場所にXXXXX.html（Render（.qmd -&gt; .html）の出力結果）を置かないといけない\nローカル環境で作成したものを反映させる時は、\n\n\nquarto render\ngithub add . 現在のディレクトリの内容をステージング\ngithub commit -m \"何かコメントを書く\"\ngithub push origin gh-pages リモート環境（GitHubのgh-pagesブランチ）にローカル環境の内容（Origin）を送信 を行う。RStudio上でTerminalを動かすこともできるので、そこで行うのが楽。GitコマンドはLinuxコマンドのように演算子で繋ぐこともできるので、quarto render; github add .; github commit -m \"何かコメントを書く\"; github push origin gh-pagesの1行でも可。"
+    "text": "はじめに\nQuartoを使って、RStudio上で作り、GitHub Pages上で公開することにした。\n\n\nポイント\n\nGitHubが参照できる場所にXXXXX.html（Render（.qmd -&gt; .html）の出力結果）を置かないといけない\nローカル環境で作成したものを反映させる時は、\n\n\nquarto render\ngit add . 現在のディレクトリの内容をステージング\ngit commit -m \"何かコメントを書く\"\ngit push origin gh-pages リモート環境（GitHubのgh-pagesブランチ）にローカル環境の内容（Origin）を送信 を行う。RStudio上でTerminalを動かすこともできるので、そこで行うのが楽。GitコマンドはLinuxコマンドのように演算子で繋ぐこともできるので、quarto render; git add .; git commit -m \"何かコメントを書く\"; git push origin gh-pagesの1行でも可。"
   },
   {
     "objectID": "ggtree.html",
@@ -18,7 +18,7 @@
     "href": "ggtree.html#timetree5で種の系統樹を作成する",
     "title": "ggtree",
     "section": "1. TimeTree5で種の系統樹を作成する",
-    "text": "1. TimeTree5で種の系統樹を作成する\nTimeTree5は、生命の進化のタイムスケールに関する情報を集めたデータベースで、膨大な数の研究がまとめられている。\n\n\n\n\n\n今回は十二支の系統関係が知りたいので、Build a Timetreeに十二支の動物たちの種名のリストをアップロードする。このリストは種ごとに改行した標準テキストでよい。\n\n\n\n\n\nアップロード後、次のような出力結果が表示される。\n\n\n\n\n\n上に系統樹、下に各種が分岐した時の地質年代や大気中の酸素や二酸化炭素の組成などが表示されている。左側のチェックボックスで図の調整やExportすることができる。\n\n\n\n\n\nggtreeにこの系統図を図のまま読み込ませることはできない。コンピュータで系統関係を表す時、ニューウィック形式（Newick format, .newick）という記述法が用いられる。図と同様に十二支のNewickファイルをexportすると、次のようなファイルが得られる。\n\n\n\n\n\nNewick形式では、クレード同士を「,」で区切り、近縁な姉妹群を「()」でまとめる。「:」の後ろの数値はクレードごとの枝長（遺伝的距離）を示す。このようなルールで系統関係を示すことができる。しかし、Newick形式から一目で系統関係を読み解くのは難しい。そこでggtreeで系統樹を可視化する1。"
+    "text": "1. TimeTree5で種の系統樹を作成する\nTimeTree5は、生命の進化のタイムスケールに関する情報を集めたデータベースで、膨大な数の研究がまとめられている。\n\n今回は十二支の系統関係が知りたいので、Build a Timetreeに十二支の動物たちの種名のリストをアップロードする。このリストは種ごとに改行した標準テキストでよい。\n\n\n\n\n\nアップロード後、次のような出力結果が表示される。\n\n\n\n\n\n上に系統樹、下に各種が分岐した時の地質年代や大気中の酸素や二酸化炭素の組成などが表示されている。左側のチェックボックスで図の調整やExportすることができる。\n\n\n\n\n\nggtreeにこの系統図を図のまま読み込ませることはできない。コンピュータで系統関係を表す時、ニューウィック形式（Newick format, .newick）という記述法が用いられる。図と同様に十二支のNewickファイルをexportすると、次のようなファイルが得られる。\n\n\n\n\n\nNewick形式では、クレード同士を「,」で区切り、近縁な姉妹群を「()」でまとめる。「:」の後ろの数値はクレードごとの枝長（遺伝的距離）を示す。このようなルールで系統関係を示すことができる。しかし、Newick形式から一目で系統関係を読み解くのは難しい。そこでggtreeで系統樹を可視化する1。"
   },
   {
     "objectID": "ggtree.html#ggtreeでnewick形式から系統樹を作図する",
